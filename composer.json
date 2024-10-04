@@ -1,0 +1,17 @@
+{
+    "name": "fdjuliza85/workopia-php",
+    "description": "Job Listing Application",
+    "author": [
+        {
+            "name": "Fadjar Djulizar",
+            "email": "fdjuliza85@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "Framework/",
+            "App\\": "App/"
+
+        }
+    }
+}

@@ -1,5 +1,9 @@
 <?php
 
+namespace Framework;
+
+use PDO; //composer 
+
 class Database
 {
     public $conn;
