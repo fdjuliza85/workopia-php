@@ -2,7 +2,9 @@
 
 namespace Framework;
 
+use Exception;
 use PDO; //composer 
+use PDOException;
 
 class Database
 {
