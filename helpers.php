@@ -74,8 +74,9 @@ function inspect($value)
 function inspectAndDie($value)
 {
     echo "<pre>";
-    die(var_dump($value));
+    var_dump($value);
     echo "</pre>";
+    die();
 }
 
 
@@ -88,4 +89,28 @@ function inspectAndDie($value)
 function formatSalary($salary)
 {
     return '$' . number_format(floatval($salary));
+}
+
+/**
+ * Sanatize data
+ * 
+ * @param String $dirty
+ * @return String  
+ */
+
+function sanitize($dirty)
+{
+    return filter_var(trim($dirty), FILTER_SANITIZE_SPECIAL_CHARS);
+}
+
+
+/**
+ * redirect to given URL
+ * 
+ * @param string $url
+ * @return void
+ */
+function redirect($url){
+    header("Location: {$url}");
+    exit;
 }
