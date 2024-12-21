@@ -1,16 +1,21 @@
-<?php if (isset($_SESSION['success_message'])) : ?>
+<?php 
+use Framework\Session;
+?>
+
+
+
+<?php $success_message = Session::getFlashMessage('success_message'); ?>
+<?php if($success_message !== null) : ?>
     <div class="message bg-green-100 p-3 my-3">
-        <?= $_SESSION['success_message']?>
+        <?= $success_message ?>
     </div>
-     <?php unset($_SESSION['success_message'])?>
-
-<?php endif; ?>    
+<?php endif; ?>
 
 
-<?php if (isset($_SESSION['error_message'])) : ?>
+
+<?php $error_message = Session::getFlashMessage('error_message'); ?>
+<?php if($error_message !== null) : ?>
     <div class="message bg-red-100 p-3 my-3">
-        <?= $_SESSION['error_message']?>
+        <?= $error_message ?>
     </div>
-     <?php unset($_SESSION['error_message'])?>
-
-<?php endif; ?> 
+<?php endif; ?>
