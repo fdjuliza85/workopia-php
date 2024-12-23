@@ -10,11 +10,11 @@
                 name="keywords"
                 placeholder="Keywords"
                 class="w-full md:w-auto mb-2 px-4 py-2 focus:outline-none" />
-            <input
+            <!-- <input
                 type="text"
                 name="location"
                 placeholder="Location"
-                class="w-full md:w-auto mb-2 px-4 py-2 focus:outline-none" />
+                class="w-full md:w-auto mb-2 px-4 py-2 focus:outline-none" /> -->
             <button
                 class="w-full md:w-auto bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 focus:outline-none">
                 <i class="fa fa-search"></i> Search
